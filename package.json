@@ -2,15 +2,14 @@
   "name": "portfolio",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://kimjeongseong.github.io/KimJS_portfolio/",
   "type": "module",
   "scripts": {
-    "deploy": "gh-pages -d dist ",
-    "predeploy": "npm run build",
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint .",
     "preview": "vite preview",
-    "homepage": "https://kimjeongseong.github.io/KimJS_portfolio/"
+    "predeploy": "npm run build",
+    "deploy": "npx gh-pages -d dist"
   },
   "dependencies": {
     "framer-motion": "^12.36.0",
