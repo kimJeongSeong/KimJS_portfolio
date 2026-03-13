@@ -432,7 +432,7 @@ function App() {
             </motion.p>
           </motion.header>
         ) : (
-          /* ---------------- 메인 콘텐츠 화면 ---------------- */
+          
           <motion.main
             key="main"
             initial={{ opacity: 0 }}

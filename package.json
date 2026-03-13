@@ -4,13 +4,14 @@
   "version": "0.0.0",
   "homepage": "https://kimjeongseong.github.io/KimJS_portfolio/",
   "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "npx gh-pages -d dist"
-  },
+ "scripts": {
+  "dev": "vite",
+  "build": "vite build",
+  "lint": "eslint .",
+  "preview": "vite preview",
+  "predeploy": "npm run build",
+  "deploy": "npx gh-pages -d dist" 
+},
   "dependencies": {
     "framer-motion": "^12.36.0",
     "react": "^19.2.4",

@@ -3,7 +3,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import "./contents.css";
 
 const Artwork = ({ id }) => {
-  // 숫자만 변경하면 작품 개수가 자동으로 조절
   const totalItems = 10;
 
   const artItems = Array.from({ length: totalItems }, (_, i) => i + 1);
@@ -27,7 +26,7 @@ const Artwork = ({ id }) => {
         >
           {artItems.map((num) => {
             const imgNumber = String(num).padStart(2, "0");
-            const imgSrc = `/artwork_${imgNumber}.png`;
+            const imgSrc = `${import.meta.env.BASE_URL}artwork_${imgNumber}.png`;
 
             return (
               <motion.div

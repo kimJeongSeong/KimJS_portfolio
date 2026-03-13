@@ -3,17 +3,17 @@ import { motion } from "framer-motion";
 import "./contents.css";
 
 const Tool_sns = () => {
-  const tools = [
-      { name: "Photoshop", src: "tool_icon/Photoshop.png" },
-      { name: "Illustrator", src: "tool_icon/Illustrator.png" },
-      { name: "InDesign", src: "tool_icon/Indesgin.png" },
-      { name: "React", src: "tool_icon/react.png" },
-      { name: "Html5", src: "tool_icon/html.png" },
-      { name: "Css3", src: "tool_icon/css.png" },
-      { name: "Javascript", src: "tool_icon/javascript.png" },
-      { name: "Procreate", src: "tool_icon/procreate.png" },
-      { name: "Clipstudio", src: "tool_icon/clipstudio.png" },
-      { name: "Figma", src: "tool_icon/figma.png" },
+ const tools = [
+      { name: "Photoshop", src: `${import.meta.env.BASE_URL}tool_icon/Photoshop.png` },
+      { name: "Illustrator", src: `${import.meta.env.BASE_URL}tool_icon/Illustrator.png` },
+      { name: "InDesign", src: `${import.meta.env.BASE_URL}tool_icon/Indesgin.png` },
+      { name: "React", src: `${import.meta.env.BASE_URL}tool_icon/react.png` },
+      { name: "Html5", src: `${import.meta.env.BASE_URL}tool_icon/html.png` },
+      { name: "Css3", src: `${import.meta.env.BASE_URL}tool_icon/css.png` },
+      { name: "Javascript", src: `${import.meta.env.BASE_URL}tool_icon/javascript.png` },
+      { name: "Procreate", src: `${import.meta.env.BASE_URL}tool_icon/procreate.png` },
+      { name: "Clipstudio", src: `${import.meta.env.BASE_URL}tool_icon/clipstudio.png` },
+      { name: "Figma", src: `${import.meta.env.BASE_URL}tool_icon/figma.png` },
   ];
 
   return (
@@ -49,7 +49,6 @@ const Tool_sns = () => {
         </div>
       </div>
 
-      {/* 사용 가능 툴 그리드 섹션 */}
       <div className="tool-grid-section">
         <h3 className="tool-title">SKILL & TOOLS</h3>
         <div className="tool-grid">

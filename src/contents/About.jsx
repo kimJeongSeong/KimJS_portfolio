@@ -18,7 +18,7 @@ const About = () => {
         <div className="about-main-layout">
           
           <div className="about-profile-image">
-            <img src="/profile.jpg" alt="Kim JeongSeong" />
+           <img src={`${import.meta.env.BASE_URL}profile.jpg`} alt="Kim JeongSeong" />
           </div>
 
           <div className="about-text-content">

@@ -1,20 +1,20 @@
-/* --- 기초 초기화 --- */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   background-color: #000;
   overflow-x: hidden;
   font-family: "Inter", sans-serif;
   color: #fff;
 }
+
 .app-container {
   width: 100%;
   min-height: 100vh;
   position: relative;
-  /* 🚀 위에서 아래로 흐르는 3색 그라데이션 */
   background: linear-gradient(
     to bottom,
     #000000 0%,
@@ -23,33 +23,30 @@ body {
     #0a4be5 70%,
     #ddcbb1 85%
   );
-  /* 그라데이션이 끊기지 않고 전체 콘텐츠 길이에 맞춰 늘어나도록 설정 */
   background-attachment: scroll;
 }
 ::-webkit-scrollbar {
   width: 10px !important;
 }
 
-/* 2. 트랙(배경)을 아예 투명하게 고정 🚀 */
 ::-webkit-scrollbar-track {
   background-color: transparent !important;
   background: transparent !important;
 }
 
-/* 3. 막대(Thumb)는 자바스크립트에서 보낸 색상을 받을 수 있도록 기본 설정 */
 ::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.3);
   border-radius: 10px;
-  border: 2px solid transparent; /* 여백 효과 */
+  border: 2px solid transparent;
   background-clip: padding-box;
 }
-
 
 section,
 .content-section {
   background-color: transparent !important;
 }
 
-/* --- 인트로 화면 --- */
+/* 인트로 화면 */
 .intro-view {
   position: fixed;
   top: 0;
@@ -130,7 +127,6 @@ section,
   z-index: 5;
 }
 
-/* 배경 요소 정렬 */
 .bg-static-svg,
 .bg-ellipse-svg,
 .capricorn-svg,
@@ -166,16 +162,15 @@ section,
   filter: brightness(1) blur(1px);
 }
 
-/* 타이틀 */
 .intro-title-area {
   display: flex;
   align-items: center;
-  justify-content: center; /* 기본적으로 완전 중앙 */
+  justify-content: center;
   position: relative;
   z-index: 10;
-  gap: 20px; /* 모바일에서는 간격을 좁게 조절하는 것이 좋습니다 */
+  gap: 20px;
   width: 100%;
-  transition: all 0.5s ease; /* 부드러운 전환을 원할 경우 */
+  transition: all 0.5s ease;
 }
 .title-svg {
   width: 45vw;
@@ -185,14 +180,11 @@ section,
 
 @media (min-width: 1024px) {
   .intro-title-area {
-    gap: 150px; 
+    gap: 150px;
     transform: translateX(-10vh);
-    /* 요청하신 간격 유지 */
-    /* 또는  를 사용해도 됩니다 */
   }
 }
 
-/* 이미지 클래스들 (이전과 동일) */
 .title-svg-main {
   height: auto;
   max-width: 50vw;
@@ -219,7 +211,6 @@ section,
   text-transform: uppercase;
 }
 
-/* 네비게이션 */
 .navbar {
   position: fixed;
   top: 0;
@@ -238,7 +229,6 @@ section,
   gap: 3vw;
 }
 
-/* --- 네비게이션 아이템 수정 --- */
 .nav-item {
   background: none;
   border: none;
@@ -249,26 +239,24 @@ section,
   letter-spacing: 0.1rem;
   text-transform: uppercase;
   position: relative;
-  padding: 0 10px 0 22px; /* 왼쪽에 별이 들어갈 공간 확보 */
+  padding: 0 10px 0 22px;
   transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
   outline: none;
 }
 
-/* --- 별 아이콘 추가 (가상 요소) --- */
 .nav-item::before {
-  content: "★"; /* 별 모양 아이콘 */
+  content: "★";
   position: absolute;
   left: 0;
   top: 50%;
-  transform: translateY(-50%) scale(0) rotate(-45deg); /* 초기 상태: 작고 회전됨 */
+  transform: translateY(-50%) scale(0) rotate(-45deg);
   font-size: 0.7rem;
   color: #fff;
   opacity: 0;
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* 튕기는 느낌 */
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   text-shadow: 0 0 10px #fff;
 }
 
-/* --- 호버 시 효과 --- */
 .nav-item:hover {
   color: #fff;
   text-shadow:
@@ -277,14 +265,12 @@ section,
   transform: translateY(-2px);
 }
 
-/* 호버 시 별 등장 */
 .nav-item:hover::before {
   opacity: 1;
   transform: translateY(-50%) scale(1.1) rotate(0deg);
-  animation: star-twinkle 1s infinite alternate; /* 별 반짝임 애니메이션 */
+  animation: star-twinkle 1s infinite alternate;
 }
 
-/* 하단 선 효과 */
 .nav-item::after {
   content: "";
   position: absolute;
@@ -304,7 +290,6 @@ section,
   box-shadow: 0 0 10px #fff;
 }
 
-/* --- 애니메이션 키프레임 --- */
 @keyframes twinkle {
   0% {
     opacity: 1;
@@ -346,7 +331,7 @@ section,
     letter-spacing: 0.4rem;
   }
   .nav-item {
-    padding-left: 18px; /* 모바일에서 여백 조정 */
+    padding-left: 18px;
     font-size: 0.7rem;
   }
 
