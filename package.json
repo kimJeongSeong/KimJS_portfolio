@@ -10,7 +10,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "homepage": "https://kimjJeongSeong.github.io/KimJS_portfolio"
+    "homepage": "https://kimjeongseong.github.io/KimJS_portfolio/"
   },
   "dependencies": {
     "framer-motion": "^12.36.0",

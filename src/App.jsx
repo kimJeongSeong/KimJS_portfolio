@@ -464,7 +464,7 @@ function App() {
                 }}
               />
               <motion.img
-                src="/contact_object.png"
+                src="contact_object.png"
                 alt="Bottle"
                 className="contact-bottle"
                 initial={{ y: -150, opacity: 0 }}

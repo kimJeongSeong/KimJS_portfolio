@@ -4,16 +4,16 @@ import "./contents.css";
 
 const Tool_sns = () => {
   const tools = [
-      { name: "Photoshop", src: "/tool_icon/Photoshop.png" },
-      { name: "Illustrator", src: "/tool_icon/Illustrator.png" },
-      { name: "InDesign", src: "/tool_icon/Indesgin.png" },
-      { name: "React", src: "/tool_icon/react.png" },
-      { name: "Html5", src: "/tool_icon/html.png" },
-      { name: "Css3", src: "/tool_icon/css.png" },
-      { name: "Javascript", src: "/tool_icon/javascript.png" },
-      { name: "Procreate", src: "/tool_icon/procreate.png" },
-      { name: "Clipstudio", src: "/tool_icon/clipstudio.png" },
-      { name: "Figma", src: "/tool_icon/figma.png" },
+      { name: "Photoshop", src: "tool_icon/Photoshop.png" },
+      { name: "Illustrator", src: "tool_icon/Illustrator.png" },
+      { name: "InDesign", src: "tool_icon/Indesgin.png" },
+      { name: "React", src: "tool_icon/react.png" },
+      { name: "Html5", src: "tool_icon/html.png" },
+      { name: "Css3", src: "tool_icon/css.png" },
+      { name: "Javascript", src: "tool_icon/javascript.png" },
+      { name: "Procreate", src: "tool_icon/procreate.png" },
+      { name: "Clipstudio", src: "tool_icon/clipstudio.png" },
+      { name: "Figma", src: "tool_icon/figma.png" },
   ];
 
   return (
