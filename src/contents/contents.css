@@ -507,7 +507,7 @@ body {
   margin-top: -35vh;
   width: 100%;
   height: 55vh;
-  background-image: url("./artwork_contact_bac.png");
+  background-image: url("/artwork_contact_bac.png");
   background-size: cover;
   background-position: center;
   mask-image: linear-gradient(to bottom, transparent 0%, black 15%);
@@ -556,7 +556,7 @@ body {
   position: relative;
   overflow: hidden;
   background-color: #000;
-  background-image: url("./contact_bac.png");
+  background-image: url("/contact_bac.png");
   background-size: cover;
   background-position: center;
   justify-content: center;

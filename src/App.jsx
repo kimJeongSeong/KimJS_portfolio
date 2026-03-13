@@ -432,7 +432,7 @@ function App() {
             </motion.p>
           </motion.header>
         ) : (
-          
+
           <motion.main
             key="main"
             initial={{ opacity: 0 }}
