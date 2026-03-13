@@ -1,0 +1,284 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #010409;
+  color: white;
+  overflow-x: hidden;
+  font-family: "Pretendard", sans-serif;
+}
+
+.capricorn-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4rem;
+  background: rgba(1, 4, 9, 0.85);
+  backdrop-filter: blur(15px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(1rem, 3vw, 2.5rem);
+  z-index: 9999;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0 clamp(1rem, 5vw, 3rem);
+  box-sizing: border-box;
+}
+
+.nav-link {
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: clamp(0.7rem, 1.2vw, 0.9rem);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  transition: 0.3s;
+  white-space: nowrap;
+}
+
+.nav-link:hover {
+  color: #fff;
+  text-shadow: 0 0 8px #fff;
+}
+
+.full-constellation-view {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at center, #0a192f 0%, #010409 100%);
+  cursor: pointer;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.star-list-container {
+  position: relative;
+  width: min(600px, 90vw);
+  height: min(500px, 75vw);
+  max-width: 37.5rem;
+}
+
+.constellation-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+/* 메인 별자리 */
+.star-node {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 0;
+  height: 0;
+}
+
+.star-point {
+  width: clamp(0.5rem, 1.5vw, 0.75rem);
+  height: clamp(0.5rem, 1.5vw, 0.75rem);
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 0.9rem #fff;
+  cursor: pointer;
+  z-index: 10;
+  flex-shrink: 0;
+}
+
+/* 별 위에 뜨는 메뉴 버튼 (좌표 고정) */
+.menu-button {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: #fff;
+  font-size: clamp(0.55rem, 1vw, 0.75rem);
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  padding: 0.25rem 0.6rem;
+  border-radius: 2px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s;
+  z-index: 20;
+}
+
+.menu-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: #fff;
+  transform: translateX(-50%) scale(1.05);
+}
+
+.menu-label {
+  position: absolute;
+  top: 1.2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  font-size: clamp(0.6rem, 1vw, 0.75rem);
+  font-weight: bold;
+  letter-spacing: 0.12em;
+  white-space: nowrap;
+  pointer-events: none;
+  z-index: 5;
+}
+
+/* 보조 별 */
+.star-point.sub {
+  width: clamp(0.2rem, 0.6vw, 0.3125rem);
+  height: clamp(0.2rem, 0.6vw, 0.3125rem);
+  background-color: rgba(255, 255, 255, 0.4);
+  box-shadow: none;
+}
+
+.menu-label {
+  position: absolute;
+  top: 1.5rem;
+  color: #fff;
+  font-size: clamp(0.6rem, 1vw, 0.75rem);
+  font-weight: bold;
+  letter-spacing: 0.12em;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+/* 섹션 */
+.section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: clamp(2rem, 6vw, 5rem);
+  font-weight: 900;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+/* 데스크탑 (1440px 이하) */
+@media (max-width: 90rem) {
+  .capricorn-container {
+    max-width: 90rem;
+    margin: 0 auto;
+  }
+
+  .top-navbar {
+    height: 4rem;
+    gap: clamp(1.5rem, 2.5vw, 2.5rem);
+    padding: 0 clamp(2rem, 5vw, 5rem);
+  }
+
+  .nav-link {
+    font-size: clamp(0.8rem, 1vw, 0.9rem);
+  }
+
+  .star-list-container {
+    width: min(600px, 80vw);
+    height: min(500px, 66.7vw);
+    max-width: 37.5rem;
+  }
+
+  .section {
+    font-size: clamp(3rem, 5vw, 5rem);
+  }
+}
+
+/* 태블릿 (1024px 이하) */
+@media (max-width: 64rem) {
+  .top-navbar {
+    height: 3.5rem;
+    gap: clamp(1rem, 2vw, 1.75rem);
+    padding: 0 clamp(1.25rem, 4vw, 3rem);
+  }
+
+  .nav-link {
+    font-size: clamp(0.7rem, 1.3vw, 0.85rem);
+    letter-spacing: 0.04em;
+  }
+
+  .star-list-container {
+    width: min(480px, 85vw);
+    height: min(400px, 70.8vw);
+  }
+
+  .star-point {
+    width: clamp(0.45rem, 1.2vw, 0.65rem);
+    height: clamp(0.45rem, 1.2vw, 0.65rem);
+  }
+
+  .menu-label {
+    font-size: clamp(0.6rem, 1vw, 0.7rem);
+    top: 1.25rem;
+  }
+
+  .section {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+  }
+}
+
+/* 모바일 (480px 이하) */
+@media (max-width: 30rem) {
+  .top-navbar {
+    height: auto;
+    min-height: 3rem;
+    gap: 0.6rem;
+    padding: 0.5rem 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-link {
+    font-size: 0.65rem;
+    letter-spacing: 0.03em;
+  }
+
+  .star-list-container {
+    width: 92vw;
+    height: 76.7vw;
+    max-width: unset;
+  }
+
+  .star-point {
+    width: clamp(0.35rem, 2vw, 0.5rem);
+    height: clamp(0.35rem, 2vw, 0.5rem);
+    box-shadow: 0 0 0.5rem #fff;
+  }
+
+  .star-point.sub {
+    width: clamp(0.15rem, 0.8vw, 0.25rem);
+    height: clamp(0.15rem, 0.8vw, 0.25rem);
+  }
+
+  .menu-label {
+    font-size: 0.5rem;
+    letter-spacing: 0.06em;
+    top: 1rem;
+  }
+
+  .section {
+    font-size: clamp(1.5rem, 8vw, 2.5rem);
+    padding: 0 1.25rem;
+  }
+}

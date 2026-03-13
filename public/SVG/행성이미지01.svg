@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 918.74 697.86">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: .5;
+      }
+
+      .cls-2, .cls-3, .cls-4, .cls-5 {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        stroke-width: 3px;
+      }
+
+      .cls-4 {
+        stroke-width: 2px;
+      }
+
+      .cls-6 {
+        fill: #fff;
+        stroke-width: 0px;
+      }
+
+      .cls-5 {
+        stroke-dasharray: 0 0 6.01 6.01;
+        stroke-width: 4px;
+      }
+    </style>
+  </defs>
+  <g id="Layer_3" data-name="Layer 3">
+    <g>
+      <g>
+        <circle class="cls-3" cx="459.37" cy="348.11" r="306.58"/>
+        <circle class="cls-2" cx="459.89" cy="348.93" r="348.43"/>
+        <g class="cls-1">
+          <circle class="cls-5" cx="459.37" cy="348.11" r="244.76"/>
+        </g>
+        <circle class="cls-6" cx="459.37" cy="348.11" r="178.16"/>
+      </g>
+      <ellipse class="cls-4" cx="459.37" cy="348.11" rx="476.13" ry="146.73" transform="translate(-80.09 145.16) rotate(-16.54)"/>
+    </g>
+  </g>
+</svg>
