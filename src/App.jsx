@@ -320,19 +320,19 @@ function App() {
                 transition={{ duration: 2 }}
               />
               <img
-                src="/SVG/상단왼쪽.svg"
+                src="SVG/상단왼쪽.svg"
                 alt=""
                 className="top-svg top-left"
               />
               <motion.img
-                src="/SVG/상단별.svg"
+                src="SVG/상단별.svg"
                 alt=""
                 className="top-svg top-center"
                 animate={{ opacity: [0.3, 0.8, 0.3] }}
                 transition={{ duration: 3, repeat: Infinity }}
               />
               <img
-                src="/SVG/상단오른쪽.svg"
+                src="SVG/상단오른쪽.svg"
                 alt=""
                 className="top-svg top-right"
               />
@@ -347,12 +347,12 @@ function App() {
               }}
             >
               <img
-                src="/SVG/뒷배경이미지.svg"
+                src="SVG/뒷배경이미지.svg"
                 alt=""
                 className="bg-static-svg"
               />
               <motion.img
-                src="/SVG/뒷배경타원.svg"
+                src="SVG/뒷배경타원.svg"
                 className="bg-ellipse-svg"
                 style={{ x: "-50%", y: "-50%" }}
                 animate={{ rotateX: [0, 360] }}
@@ -386,7 +386,7 @@ function App() {
               <div className="intro-title-area">
                 {/* 왼쪽 이미지 */}
                 <motion.img
-                  src="/SVG/왼쪽이미지.svg"
+                  src="SVG/왼쪽이미지.svg"
                   className="title-svg title-deco-left"
                   initial={{ opacity: 0, clipPath: "inset(100% 0% 0% 0%)" }}
                   animate={{ opacity: 1, clipPath: "inset(0% 0% 0% 0%)" }}
@@ -399,7 +399,7 @@ function App() {
 
                 {/* 중앙 타이틀 */}
                 <motion.img
-                  src="/SVG/title.svg"
+                  src="SVG/title.svg"
                   alt="Title"
                   className="title-svg-main"
                   initial={{ opacity: 0 }}
@@ -409,7 +409,7 @@ function App() {
 
                 {/* 오른쪽 이미지 */}
                 <motion.img
-                  src="/SVG/오른쪽이미지.svg"
+                  src="SVG/오른쪽이미지.svg"
                   className="title-svg title-deco-right"
                   initial={{ opacity: 0, clipPath: "inset(0% 0% 100% 0%)" }}
                   animate={{ opacity: 1, clipPath: "inset(0% 0% 0% 0%)" }}
