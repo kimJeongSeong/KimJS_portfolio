@@ -58,7 +58,7 @@ function App() {
     }, 480);
   };
 
-  // 페이지 스크롤 진행도
+  // 페이지 스크롤
   const { scrollYProgress } = useScroll();
 
   const seaY = useTransform(scrollYProgress, [0.7, 1], [0, -100]);
@@ -291,7 +291,8 @@ function App() {
 
       <AnimatePresence mode="wait">
         {!isActive ? (
-          /* ---------------- 로딩/인트로 화면 ---------------- */
+
+          /* 로딩/인트로 화면 */
           <motion.header
             key="intro"
             className="intro-view"
@@ -407,7 +408,6 @@ function App() {
                   transition={{ duration: 1.5, delay: 0.3 }}
                 />
 
-                {/* 오른쪽 이미지 */}
                 <motion.img
                   src="SVG/오른쪽이미지.svg"
                   className="title-svg title-deco-right"

@@ -8,34 +8,44 @@ const Work = () => {
       id: 1, 
       title: "Weather App",
       tag: "[디자인·퍼블리싱·반응형]" , 
-      tech: "React / HTML / CSS / Procreate / Photoshop / Illustrator ", 
+      tech: "React / HTML / CSS / JAVASCRIPT / Procreate / Photoshop / Illustrator ", 
       img: `${import.meta.env.BASE_URL}Thumbnail_img_01.png`, 
-      desc: "실시간 데이터를 100% 수작업 픽셀 아트로 재해석한 독창적인 인터랙티브 룸입니다. 창밖 풍경을 방 안으로 들여온 듯한 몰입감을 선사합니다.",
+      desc: "실시간 데이터를 100% 수작업 픽셀 아트로 제작한 독창적인 인터랙티브 룸입니다.",
       github: "https://github.com/kimJeongSeong/Weather_project",
       site: "https://kimjeongseong.github.io/Weather_project/",
-      notion: "https://flat-wakeboard-53d.notion.site/31f26207fef580408abffbf0f882639f" // 기획서 링크 추가
+      notion: "https://flat-wakeboard-53d.notion.site/31f26207fef580408abffbf0f882639f"
     },
     { 
       id: 2, 
-      title: "Constellation Portfolio", 
+      title: "후지필름", 
       tag: "[디자인·퍼블리싱·반응형]" , 
-      tech: "React / Framer Motion / GSAP", 
-      img: `${import.meta.env.BASE_URL}work2.png`,
-      desc: "염소자리 성도를 모티브로 한 드래그 기반의 인터랙티브 포트폴리오입니다.",
+      tech: "Photoshop / HTML / CSS / JAVASCRIPT ", 
+      img: `${import.meta.env.BASE_URL}fuji.png`,
+      desc: "후지필름 사이트 클론 코딩입니다.",
       github: "https://github.com/KimJeongSeong/star-portfolio",
       site: "#",
       notion: "#" 
     },
     { 
       id: 3, 
-      title: "Character Storybook", 
+      title: "후지필름", 
       tag: "[디자인·퍼블리싱·반응형]" , 
-      tech: "Illustration / Design", 
-      img: `${import.meta.env.BASE_URL}work3.png`,
-      desc: "보건소 협업 프로젝트로 진행된 어린이 건강 교육용 캐릭터 동화책입니다.",
-      github: "https://github.com/KimJeongSeong/storybook-project",
+      tech: "Photoshop / HTML / CSS / JAVASCRIPT ", 
+      img: `${import.meta.env.BASE_URL}work2.png`,
+      desc: "후지필름 사이트 클론 코딩입니다.",
+      github: "https://github.com/KimJeongSeong/star-portfolio",
       site: "#",
-      notion: "#"
+      notion: "#" 
+    },
+    { 
+      id: 4, 
+      title: "Kim Jeong Seong Portfolio", 
+      tag: "[디자인·퍼블리싱·반응형]" , 
+      tech: "React / HTML / CSS / Procreate / Photoshop / Illustrator ", 
+      img: `${import.meta.env.BASE_URL}portfolio_window.png`,
+      desc: "염소자리의 밤하늘과 바다가 어우러진 메인 포트폴리오 사이트입니다",
+      github: "https://github.com/kimJeongSeong/KimJS_portfolio",
+      site: "https://kimjeongseong.github.io/KimJS_portfolio/",
     },
   ];
 

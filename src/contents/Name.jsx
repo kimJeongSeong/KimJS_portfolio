@@ -65,6 +65,7 @@ const Name = ({ isLogo, onLogoClick, id }) => {
     onClick={() => handleStarClick(star.target)}
     initial={{ opacity: 0 }}
     whileInView={{ opacity: 1 }}
+    transition={{ duration: 1 }}
   >
     <motion.circle
       cx={star.x}
@@ -90,9 +91,9 @@ const Name = ({ isLogo, onLogoClick, id }) => {
     {star.label && (
       <text 
         x={star.x} 
-        y={star.y - 5} 
+        y={star.y - 6 } 
         textAnchor="middle" 
-        className="star-label"
+        className="star-label permanent-show"
       >
         {star.label}
       </text>

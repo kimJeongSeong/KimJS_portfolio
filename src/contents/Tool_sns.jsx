@@ -14,6 +14,9 @@ const Tool_sns = () => {
       { name: "Procreate", src: `${import.meta.env.BASE_URL}tool_icon/procreate.png` },
       { name: "Clipstudio", src: `${import.meta.env.BASE_URL}tool_icon/clipstudio.png` },
       { name: "Figma", src: `${import.meta.env.BASE_URL}tool_icon/figma.png` },
+      { name: "SCSS", src: `${import.meta.env.BASE_URL}tool_icon/sass.png` },
+      { name: "Gemini", src: `${import.meta.env.BASE_URL}tool_icon/gemini.png` },
+      { name: "Claude", src: `${import.meta.env.BASE_URL}tool_icon/claude.png` },
   ];
 
   return (

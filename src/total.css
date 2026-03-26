@@ -105,7 +105,6 @@ body {
   flex-shrink: 0;
 }
 
-/* 별 위에 뜨는 메뉴 버튼 (좌표 고정) */
 .menu-button {
   position: absolute;
   bottom: 1.5rem;
@@ -145,7 +144,6 @@ body {
   z-index: 5;
 }
 
-/* 보조 별 */
 .star-point.sub {
   width: clamp(0.2rem, 0.6vw, 0.3125rem);
   height: clamp(0.2rem, 0.6vw, 0.3125rem);
@@ -164,7 +162,6 @@ body {
   pointer-events: none;
 }
 
-/* 섹션 */
 .section {
   width: 100%;
   height: 100vh;
@@ -240,6 +237,26 @@ body {
 
 /* 모바일 (480px 이하) */
 @media (max-width: 30rem) {
+  
+  .about-top-section {
+    flex-direction: column; /* 모바일만 세로로 */
+    align-items: center;
+  }
+  .about-info-grid {
+    grid-template-columns: 1fr;
+    justify-items: center;      
+    text-align: center;
+    gap: 3rem;
+  }
+
+  .info-item {
+    align-items: center;        
+    text-align: center;
+  }
+
+  .info-item p {
+    width: 100%;               
+  }
   .top-navbar {
     height: auto;
     min-height: 3rem;
@@ -248,6 +265,11 @@ body {
     flex-wrap: wrap;
     justify-content: center;
   }
+  
+  .intro-main {
+    font-size: 1.2rem;
+  }
+
 
   .nav-link {
     font-size: 0.65rem;
