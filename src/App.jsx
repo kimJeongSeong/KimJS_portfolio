@@ -77,7 +77,7 @@ function App() {
         document.documentElement.scrollHeight - window.innerHeight;
       const scrollPercent = scrollY / (maxScroll || 1);
 
-      let thumbColor = "#333333"; // 기본값 (상단)
+      let thumbColor = "#333333"; 
 
       if (scrollPercent < 0.15) {
         setNavStyle({
@@ -127,7 +127,7 @@ function App() {
           width: 10px;
         }
         ::-webkit-scrollbar-track {
-          background: transparent !important; /* 이제 진짜 투명하게 비침! */
+          background: transparent !important; 
         }
         ::-webkit-scrollbar-thumb {
           background-color: ${thumbColor} !important;

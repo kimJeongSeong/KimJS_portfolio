@@ -18,10 +18,10 @@ body {
   background: linear-gradient(
     to bottom,
     #000000 0%,
-    #1a467f 30%,
-    #1eacdb 40%,
-    #0a4be5 70%,
-    #ddcbb1 85%
+    #1a467f 25%,
+    #1eacdb 42%,
+    #0a4be5 75%,
+    #ddcbb1 83%
   );
   background-attachment: scroll;
 }
@@ -46,7 +46,6 @@ section,
   background-color: transparent !important;
 }
 
-/* 인트로 화면 */
 .intro-view {
   position: fixed;
   top: 0;

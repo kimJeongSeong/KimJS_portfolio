@@ -22,8 +22,8 @@ const Work = () => {
       tech: "Photoshop / HTML / CSS / JAVASCRIPT ", 
       img: `${import.meta.env.BASE_URL}fuji.png`,
       desc: "후지필름 사이트 클론 코딩입니다.",
-      github: "https://github.com/KimJeongSeong/star-portfolio",
-      site: "#",
+      github: "https://github.com/kimJeongSeong/clone_fuji",
+      site: "https://kimjeongseong.github.io/clone_fuji/",
       notion: "#" 
     },
     { 
